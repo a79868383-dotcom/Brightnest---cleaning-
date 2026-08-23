@@ -12,7 +12,8 @@
 
 <body>
 
-  <!-- Contact Buttons -->
+  <!-- Floating Contact Buttons -->
+
   <div class="contact-buttons">
 
     <a href="tel:+10000000000" class="call-btn">
@@ -31,20 +32,32 @@
 
 
   <!-- Header -->
+
   <header>
 
-    <div>
+    <div class="logo">
+
       <h1>BrightNest Cleaning</h1>
+
       <p>Professional Cleaning Services</p>
+
     </div>
 
+
     <nav>
+
       <a href="#home">Home</a>
+
       <a href="#services">Services</a>
+
       <a href="#pricing">Pricing</a>
-      <a href="#testimonials">Reviews</a>
+
+      <a href="#reviews">Reviews</a>
+
       <a href="#about">About</a>
+
       <a href="#contact">Contact</a>
+
     </nav>
 
   </header>
@@ -52,57 +65,122 @@
 
   <main>
 
+
     <!-- Hero -->
-    <section id="home">
 
-      <h2>A Cleaner Home Starts Here</h2>
+    <section id="home" class="hero">
 
-      <p>
-        Professional, reliable and affordable cleaning services
-        for homes and businesses.
-      </p>
+      <div class="hero-content">
 
-      <a href="#contact">
-        Get a Free Quote
-      </a>
+        <span class="hero-label">
+          ✨ Trusted Cleaning Services
+        </span>
+
+        <h2>
+          A Cleaner Home.
+          <br>
+          A Happier Life.
+        </h2>
+
+        <p>
+          Professional, reliable and affordable cleaning services
+          for homes and businesses.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#contact" class="primary-btn">
+            Get a Free Quote
+          </a>
+
+          <a href="#services" class="secondary-btn">
+            View Services
+          </a>
+
+        </div>
+
+      </div>
 
     </section>
 
 
     <!-- Services -->
+
     <section id="services">
 
-      <h2>Our Cleaning Services</h2>
+      <div class="section-heading">
 
-      <div>
+        <span>WHAT WE DO</span>
 
-        <article>
-          <h3>🏠 House Cleaning</h3>
+        <h2>Our Cleaning Services</h2>
+
+        <p>
+          Professional cleaning solutions designed to make
+          your space fresh, clean and comfortable.
+        </p>
+
+      </div>
+
+
+      <div class="service-grid">
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            🏠
+          </div>
+
+          <h3>House Cleaning</h3>
 
           <p>
-            Keep your home fresh, clean and comfortable
-            with our professional cleaning service.
+            Keep your home fresh and comfortable with
+            professional regular cleaning.
           </p>
+
+          <a href="#contact">
+            Get a Quote →
+          </a>
+
         </article>
 
 
-        <article>
-          <h3>✨ Deep Cleaning</h3>
+        <article class="service-card">
+
+          <div class="service-icon">
+            ✨
+          </div>
+
+          <h3>Deep Cleaning</h3>
 
           <p>
             Detailed cleaning for kitchens, bathrooms,
             bedrooms and living spaces.
           </p>
+
+          <a href="#contact">
+            Get a Quote →
+          </a>
+
         </article>
 
 
-        <article>
-          <h3>🏢 Office Cleaning</h3>
+        <article class="service-card">
+
+          <div class="service-icon">
+            🏢
+          </div>
+
+          <h3>Office Cleaning</h3>
 
           <p>
-            Professional cleaning to keep your workplace
-            clean, fresh and welcoming.
+            Keep your workplace clean, professional
+            and welcoming for your team and customers.
           </p>
+
+          <a href="#contact">
+            Get a Quote →
+          </a>
+
         </article>
 
       </div>
@@ -110,22 +188,117 @@
     </section>
 
 
+    <!-- Why Choose Us -->
+
+    <section id="about" class="why-section">
+
+      <div class="section-heading">
+
+        <span>WHY BRIGHTNEST?</span>
+
+        <h2>Cleaning You Can Trust</h2>
+
+      </div>
+
+
+      <div class="features-grid">
+
+        <div class="feature">
+
+          <div>✓</div>
+
+          <h3>Reliable Professionals</h3>
+
+          <p>
+            Friendly and dependable cleaning service.
+          </p>
+
+        </div>
+
+
+        <div class="feature">
+
+          <div>✓</div>
+
+          <h3>Quality Service</h3>
+
+          <p>
+            We focus on quality and attention to detail.
+          </p>
+
+        </div>
+
+
+        <div class="feature">
+
+          <div>✓</div>
+
+          <h3>Flexible Scheduling</h3>
+
+          <p>
+            Choose a cleaning schedule that works for you.
+          </p>
+
+        </div>
+
+
+        <div class="feature">
+
+          <div>✓</div>
+
+          <h3>Customer Satisfaction</h3>
+
+          <p>
+            Your satisfaction is our priority.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
     <!-- Pricing -->
+
     <section id="pricing">
 
-      <h2>Simple, Transparent Pricing</h2>
+      <div class="section-heading">
 
-      <div class="pricing-container">
+        <span>SIMPLE PRICING</span>
+
+        <h2>Choose Your Cleaning Plan</h2>
+
+      </div>
+
+
+      <div class="pricing-grid">
+
 
         <article class="price-card">
 
           <h3>Basic Cleaning</h3>
 
-          <p class="price">$79</p>
+          <div class="price">
+            $79
+            <span>/ visit</span>
+          </div>
 
           <p>
-            Perfect for regular home cleaning.
+            Great for regular home cleaning.
           </p>
+
+          <ul>
+
+            <li>✓ General cleaning</li>
+
+            <li>✓ Dusting</li>
+
+            <li>✓ Vacuuming</li>
+
+            <li>✓ Bathroom cleaning</li>
+
+          </ul>
 
           <a href="#contact">
             Get Started
@@ -134,15 +307,34 @@
         </article>
 
 
-        <article class="price-card featured">
+        <article class="price-card popular">
+
+          <div class="popular-label">
+            MOST POPULAR
+          </div>
 
           <h3>Deep Cleaning</h3>
 
-          <p class="price">$149</p>
+          <div class="price">
+            $149
+            <span>/ visit</span>
+          </div>
 
           <p>
-            Detailed cleaning for your entire home.
+            A detailed clean for your entire home.
           </p>
+
+          <ul>
+
+            <li>✓ Everything in Basic</li>
+
+            <li>✓ Kitchen deep clean</li>
+
+            <li>✓ Bathroom deep clean</li>
+
+            <li>✓ Detailed dusting</li>
+
+          </ul>
 
           <a href="#contact">
             Get Started
@@ -155,13 +347,26 @@
 
           <h3>Office Cleaning</h3>
 
-          <p class="price">
+          <div class="price">
             $199
-          </p>
+            <span>/ visit</span>
+          </div>
 
           <p>
-            Professional cleaning for your workplace.
+            Professional cleaning for workplaces.
           </p>
+
+          <ul>
+
+            <li>✓ Office cleaning</li>
+
+            <li>✓ Floor cleaning</li>
+
+            <li>✓ Desk cleaning</li>
+
+            <li>✓ Restroom cleaning</li>
+
+          </ul>
 
           <a href="#contact">
             Get Started
@@ -174,14 +379,27 @@
     </section>
 
 
-    <!-- Testimonials -->
-    <section id="testimonials">
+    <!-- Reviews -->
 
-      <h2>What Our Customers Say</h2>
+    <section id="reviews" class="reviews-section">
 
-      <div class="testimonial-container">
+      <div class="section-heading">
 
-        <article class="testimonial-card">
+        <span>CUSTOMER REVIEWS</span>
+
+        <h2>What Our Customers Say</h2>
+
+      </div>
+
+
+      <div class="reviews-grid">
+
+
+        <article class="review-card">
+
+          <div class="stars">
+            ★★★★★
+          </div>
 
           <p>
             "BrightNest did an amazing job.
@@ -195,11 +413,15 @@
         </article>
 
 
-        <article class="testimonial-card">
+        <article class="review-card">
+
+          <div class="stars">
+            ★★★★★
+          </div>
 
           <p>
             "Professional, friendly and reliable.
-            I would definitely recommend BrightNest."
+            I would definitely recommend them."
           </p>
 
           <h3>Michael R.</h3>
@@ -209,7 +431,11 @@
         </article>
 
 
-        <article class="testimonial-card">
+        <article class="review-card">
+
+          <div class="stars">
+            ★★★★★
+          </div>
 
           <p>
             "Great service and very easy to schedule.
@@ -227,37 +453,25 @@
     </section>
 
 
-    <!-- About -->
-    <section id="about">
-
-      <h2>Why Choose BrightNest?</h2>
-
-      <ul>
-
-        <li>✓ Reliable Cleaning Professionals</li>
-
-        <li>✓ High-Quality Service</li>
-
-        <li>✓ Flexible Scheduling</li>
-
-        <li>✓ Customer Satisfaction</li>
-
-      </ul>
-
-    </section>
-
-
     <!-- Contact -->
-    <section id="contact">
 
-      <h2>Get Your Free Quote</h2>
+    <section id="contact" class="contact-section">
 
-      <p>
-        Tell us what cleaning service you need.
-      </p>
+      <div class="section-heading">
+
+        <span>GET IN TOUCH</span>
+
+        <h2>Get Your Free Quote</h2>
+
+        <p>
+          Tell us what cleaning service you need.
+          We will get back to you soon.
+        </p>
+
+      </div>
 
 
-      <form>
+      <form class="quote-form">
 
         <label for="name">
           Your Name
@@ -266,13 +480,9 @@
         <input
           type="text"
           id="name"
-          name="name"
           placeholder="Enter your name"
           required
         >
-
-
-        <br><br>
 
 
         <label for="phone">
@@ -282,31 +492,30 @@
         <input
           type="tel"
           id="phone"
-          name="phone"
           placeholder="Enter your phone number"
           required
         >
 
 
-        <br><br>
-
-
         <label for="service">
-          Choose a Service
+          Cleaning Service
         </label>
 
-        <select id="service" name="service">
+        <select id="service">
 
-          <option>House Cleaning</option>
+          <option>
+            House Cleaning
+          </option>
 
-          <option>Deep Cleaning</option>
+          <option>
+            Deep Cleaning
+          </option>
 
-          <option>Office Cleaning</option>
+          <option>
+            Office Cleaning
+          </option>
 
         </select>
-
-
-        <br><br>
 
 
         <label for="message">
@@ -315,12 +524,8 @@
 
         <textarea
           id="message"
-          name="message"
           placeholder="Tell us what you need"
         ></textarea>
-
-
-        <br><br>
 
 
         <button type="submit">
@@ -335,19 +540,23 @@
 
 
   <!-- Footer -->
+
   <footer>
+
+    <h2>BrightNest Cleaning</h2>
+
+    <p>
+      Professional Cleaning Services
+    </p>
 
     <p>
       © 2026 BrightNest Cleaning.
       All rights reserved.
     </p>
 
-    <p>
-      Professional Cleaning Services
-    </p>
-
   </footer>
+
 
 </body>
 
-        </html>j
+            </html>
