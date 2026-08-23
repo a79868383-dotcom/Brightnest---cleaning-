@@ -1,611 +1,804 @@
-<!DOCTYPE html>
-<html lang="en">
+/* =========================================
+   BRIGHTNEST CLEANING
+   COMPLETE CSS
+========================================= */
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>BrightNest Cleaning | Professional Cleaning Services</title>
+/* RESET */
 
-  <link rel="stylesheet" href="style.css">
-</head>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<body>
+html {
+  scroll-behavior: smooth;
+}
 
-  <!-- Floating Contact Buttons -->
+body {
+  font-family: Arial, Helvetica, sans-serif;
 
-  <div class="contact-buttons">
+  color: #1d2939;
 
-    <a href="tel:+10000000000" class="call-btn">
-      📞 Call Now
-    </a>
+  background: #f7fbff;
 
-    <a
-      href="https://wa.me/10000000000"
-      class="whatsapp-btn"
-      target="_blank"
-    >
-      💬 WhatsApp
-    </a>
+  line-height: 1.6;
+}
 
-  </div>
 
+/* HEADER */
 
-  <!-- Header -->
+header {
+  background: white;
 
-  <header>
+  padding: 18px 7%;
 
-    <div class="logo">
+  display: flex;
 
-      <h1>BrightNest Cleaning</h1>
+  justify-content: space-between;
 
-      <p>Professional Cleaning Services</p>
+  align-items: center;
 
-    </div>
+  gap: 30px;
 
-    <nav>
+  position: sticky;
 
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+  top: 0;
 
-    </nav>
+  z-index: 1000;
 
-  </header>
+  border-bottom: 1px solid #e5e7eb;
+}
 
+.logo h1 {
+  color: #087ea4;
 
-  <main>
+  font-size: 27px;
+}
 
+.logo p {
+  color: #667085;
 
-    <!-- Hero -->
+  font-size: 13px;
+}
 
-    <section id="home" class="hero">
 
-      <div class="hero-content">
+/* NAVIGATION */
 
-        <span class="hero-label">
-          ✨ Trusted Cleaning Services
-        </span>
+nav {
+  display: flex;
 
-        <h2>
-          A Cleaner Home.
-          <br>
-          A Happier Life.
-        </h2>
+  align-items: center;
 
-        <p>
-          Professional, reliable and affordable cleaning services
-          for homes and businesses.
-        </p>
+  gap: 22px;
 
-        <div class="hero-buttons">
+  flex-wrap: wrap;
+}
 
-          <a href="#contact" class="primary-btn">
-            Get a Free Quote
-          </a>
+nav a {
+  color: #1d2939;
 
-          <a href="#services" class="secondary-btn">
-            View Services
-          </a>
+  text-decoration: none;
 
-        </div>
+  font-size: 15px;
 
-      </div>
+  font-weight: bold;
 
-    </section>
+  transition: 0.3s;
+}
 
+nav a:hover {
+  color: #087ea4;
+}
 
-    <!-- Services -->
 
-    <section id="services">
+/* GENERAL SECTION */
 
-      <div class="section-heading">
+section {
+  padding: 90px 7%;
+}
 
-        <span>WHAT WE DO</span>
+.section-heading {
+  max-width: 700px;
 
-        <h2>Our Cleaning Services</h2>
+  margin: 0 auto 50px;
 
-        <p>
-          Professional cleaning solutions designed to make
-          your space fresh, clean and comfortable.
-        </p>
+  text-align: center;
+}
 
-      </div>
+.section-heading span {
+  color: #087ea4;
 
+  font-size: 13px;
 
-      <div class="service-grid">
+  font-weight: bold;
 
-        <article class="service-card">
+  letter-spacing: 2px;
+}
 
-          <div class="service-icon">
-            🏠
-          </div>
+.section-heading h2 {
+  font-size: 38px;
 
-          <h3>House Cleaning</h3>
+  line-height: 1.2;
 
-          <p>
-            Keep your home fresh and comfortable with
-            professional regular cleaning.
-          </p>
+  margin: 10px 0 15px;
+}
 
-          <a href="#contact">
-            Get a Quote →
-          </a>
+.section-heading p {
+  color: #667085;
+}
 
-        </article>
 
+/* HERO */
 
-        <article class="service-card">
+.hero {
+  min-height: 80vh;
 
-          <div class="service-icon">
-            ✨
-          </div>
+  display: flex;
 
-          <h3>Deep Cleaning</h3>
+  align-items: center;
 
-          <p>
-            Detailed cleaning for kitchens, bathrooms,
-            bedrooms and living spaces.
-          </p>
+  padding: 100px 7%;
 
-          <a href="#contact">
-            Get a Quote →
-          </a>
+  background:
+    linear-gradient(
+      135deg,
+      #e9f8ff,
+      #ffffff
+    );
+}
 
-        </article>
+.hero-content {
+  max-width: 750px;
+}
 
+.hero-label {
+  display: inline-block;
 
-        <article class="service-card">
+  color: #087ea4;
 
-          <div class="service-icon">
-            🏢
-          </div>
+  background: white;
 
-          <h3>Office Cleaning</h3>
+  padding: 8px 15px;
 
-          <p>
-            Keep your workplace clean, professional
-            and welcoming.
-          </p>
+  border-radius: 30px;
 
-          <a href="#contact">
-            Get a Quote →
-          </a>
+  font-size: 14px;
 
-        </article>
+  font-weight: bold;
 
-      </div>
+  margin-bottom: 20px;
+}
 
-    </section>
+.hero h2 {
+  font-size: 62px;
 
+  line-height: 1.05;
 
-    <!-- Why Choose Us -->
+  margin-bottom: 25px;
+}
 
-    <section id="about" class="why-section">
+.hero p {
+  max-width: 620px;
 
-      <div class="section-heading">
+  font-size: 19px;
 
-        <span>WHY BRIGHTNEST?</span>
+  color: #475467;
 
-        <h2>Cleaning You Can Trust</h2>
+  margin-bottom: 35px;
+}
 
-      </div>
+.hero-buttons {
+  display: flex;
 
+  gap: 15px;
 
-      <div class="features-grid">
+  flex-wrap: wrap;
+}
 
-        <div class="feature">
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
 
-          <div>✓</div>
+  padding: 14px 25px;
 
-          <h3>Reliable Professionals</h3>
+  border-radius: 8px;
 
-          <p>
-            Friendly and dependable cleaning service.
-          </p>
+  text-decoration: none;
 
-        </div>
+  font-weight: bold;
 
+  transition: 0.3s;
+}
 
-        <div class="feature">
+.primary-btn {
+  background: #087ea4;
 
-          <div>✓</div>
+  color: white;
+}
 
-          <h3>Quality Service</h3>
+.primary-btn:hover {
+  background: #05627f;
 
-          <p>
-            We focus on quality and attention to detail.
-          </p>
+  transform: translateY(-2px);
+}
 
-        </div>
+.secondary-btn {
+  background: white;
 
+  color: #087ea4;
 
-        <div class="feature">
+  border: 2px solid #087ea4;
+}
 
-          <div>✓</div>
+.secondary-btn:hover {
+  background: #087ea4;
 
-          <h3>Flexible Scheduling</h3>
+  color: white;
+}
 
-          <p>
-            Choose a schedule that works for you.
-          </p>
 
-        </div>
+/* SERVICES */
 
+#services {
+  background: white;
+}
 
-        <div class="feature">
+.service-grid {
+  max-width: 1150px;
 
-          <div>✓</div>
+  margin: auto;
 
-          <h3>Customer Satisfaction</h3>
+  display: grid;
 
-          <p>
-            Your satisfaction is our priority.
-          </p>
+  grid-template-columns:
+    repeat(3, 1fr);
 
-        </div>
+  gap: 25px;
+}
 
-      </div>
+.service-card {
+  background: white;
 
-    </section>
+  padding: 35px;
 
+  border-radius: 15px;
 
-    <!-- Pricing -->
+  box-shadow:
+    0 5px 25px
+    rgba(0, 0, 0, 0.07);
 
-    <section id="pricing">
+  transition: 0.3s;
+}
 
-      <div class="section-heading">
+.service-card:hover {
+  transform: translateY(-7px);
+}
 
-        <span>SIMPLE PRICING</span>
+.service-icon {
+  font-size: 35px;
 
-        <h2>Choose Your Cleaning Plan</h2>
+  margin-bottom: 15px;
+}
 
-      </div>
+.service-card h3 {
+  color: #087ea4;
 
+  font-size: 22px;
 
-      <div class="pricing-grid">
+  margin-bottom: 12px;
+}
 
+.service-card p {
+  color: #667085;
 
-        <article class="price-card">
+  margin-bottom: 20px;
+}
 
-          <h3>Basic Cleaning</h3>
+.service-card a {
+  color: #087ea4;
 
-          <div class="price">
-            $79
-            <span>/ visit</span>
-          </div>
+  text-decoration: none;
 
-          <p>
-            Great for regular home cleaning.
-          </p>
+  font-weight: bold;
+}
 
-          <ul>
 
-            <li>✓ General cleaning</li>
-            <li>✓ Dusting</li>
-            <li>✓ Vacuuming</li>
-            <li>✓ Bathroom cleaning</li>
+/* WHY CHOOSE US */
 
-          </ul>
+.why-section {
+  background: #e9f8ff;
+}
 
-          <a href="#contact">
-            Get Started
-          </a>
+.features-grid {
+  max-width: 1000px;
 
-        </article>
+  margin: auto;
 
+  display: grid;
 
-        <article class="price-card popular">
+  grid-template-columns:
+    repeat(2, 1fr);
 
-          <div class="popular-label">
-            MOST POPULAR
-          </div>
+  gap: 20px;
+}
 
-          <h3>Deep Cleaning</h3>
+.feature {
+  background: white;
 
-          <div class="price">
-            $149
-            <span>/ visit</span>
-          </div>
+  padding: 25px;
 
-          <p>
-            A detailed clean for your entire home.
-          </p>
+  border-radius: 12px;
+}
 
-          <ul>
+.feature > div {
+  width: 35px;
 
-            <li>✓ Everything in Basic</li>
-            <li>✓ Kitchen deep clean</li>
-            <li>✓ Bathroom deep clean</li>
-            <li>✓ Detailed dusting</li>
+  height: 35px;
 
-          </ul>
+  display: flex;
 
-          <a href="#contact">
-            Get Started
-          </a>
+  align-items: center;
 
-        </article>
+  justify-content: center;
 
+  border-radius: 50%;
 
-        <article class="price-card">
+  background: #087ea4;
 
-          <h3>Office Cleaning</h3>
+  color: white;
 
-          <div class="price">
-            $199
-            <span>/ visit</span>
-          </div>
+  font-weight: bold;
 
-          <p>
-            Professional cleaning for workplaces.
-          </p>
+  margin-bottom: 12px;
+}
 
-          <ul>
+.feature h3 {
+  margin-bottom: 7px;
+}
 
-            <li>✓ Office cleaning</li>
-            <li>✓ Floor cleaning</li>
-            <li>✓ Desk cleaning</li>
-            <li>✓ Restroom cleaning</li>
+.feature p {
+  color: #667085;
+}
 
-          </ul>
 
-          <a href="#contact">
-            Get Started
-          </a>
+/* PRICING */
 
-        </article>
+#pricing {
+  background: #f7fbff;
+}
 
-      </div>
+.pricing-grid {
+  max-width: 1100px;
 
-    </section>
+  margin: auto;
 
+  display: grid;
 
-    <!-- Reviews -->
+  grid-template-columns:
+    repeat(3, 1fr);
 
-    <section id="reviews" class="reviews-section">
+  gap: 25px;
+}
 
-      <div class="section-heading">
+.price-card {
+  background: white;
 
-        <span>CUSTOMER REVIEWS</span>
+  padding: 35px 28px;
 
-        <h2>What Our Customers Say</h2>
+  border-radius: 15px;
 
-      </div>
+  text-align: center;
 
+  position: relative;
 
-      <div class="reviews-grid">
+  box-shadow:
+    0 5px 25px
+    rgba(0, 0, 0, 0.07);
+}
 
+.price-card h3 {
+  font-size: 23px;
 
-        <article class="review-card">
+  margin-bottom: 15px;
+}
 
-          <div class="stars">
-            ★★★★★
-          </div>
+.price {
+  color: #087ea4;
 
-          <p>
-            "BrightNest did an amazing job.
-            Our home looks fresh and clean!"
-          </p>
+  font-size: 45px;
 
-          <h3>Sarah M.</h3>
+  font-weight: bold;
 
-          <span>Home Cleaning Customer</span>
+  margin-bottom: 10px;
+}
 
-        </article>
+.price span {
+  color: #667085;
 
+  font-size: 14px;
 
-        <article class="review-card">
+  font-weight: normal;
+}
 
-          <div class="stars">
-            ★★★★★
-          </div>
+.price-card > p {
+  color: #667085;
 
-          <p>
-            "Professional, friendly and reliable.
-            I would definitely recommend them."
-          </p>
+  margin-bottom: 20px;
+}
 
-          <h3>Michael R.</h3>
+.price-card ul {
+  list-style: none;
 
-          <span>Deep Cleaning Customer</span>
+  text-align: left;
 
-        </article>
+  margin-bottom: 25px;
+}
 
+.price-card li {
+  margin: 10px 0;
+}
 
-        <article class="review-card">
+.price-card > a {
+  display: inline-block;
 
-          <div class="stars">
-            ★★★★★
-          </div>
+  background: #087ea4;
 
-          <p>
-            "Great service and very easy to schedule.
-            Everything was spotless."
-          </p>
+  color: white;
 
-          <h3>Emily J.</h3>
+  padding: 12px 25px;
 
-          <span>Office Cleaning Customer</span>
+  border-radius: 8px;
 
-        </article>
+  text-decoration: none;
 
-      </div>
+  font-weight: bold;
+}
 
-    </section>
+.popular {
+  border: 2px solid #087ea4;
 
+  transform: scale(1.04);
+}
 
-    <!-- Contact -->
+.popular-label {
+  background: #087ea4;
 
-    <section id="contact" class="contact-section">
+  color: white;
 
-      <div class="section-heading">
+  padding: 6px;
 
-        <span>GET IN TOUCH</span>
+  border-radius: 5px;
 
-        <h2>Get Your Free Quote</h2>
+  font-size: 12px;
 
-        <p>
-          Fill out the form and send your request directly
-          through WhatsApp.
-        </p>
+  font-weight: bold;
 
-      </div>
+  margin-bottom: 18px;
+}
 
 
-      <form
-        class="quote-form"
-        onsubmit="sendQuote(event)"
-      >
+/* REVIEWS */
 
-        <label for="name">
-          Your Name
-        </label>
+.reviews-section {
+  background: white;
+}
 
-        <input
-          type="text"
-          id="name"
-          placeholder="Enter your name"
-          required
-        >
+.reviews-grid {
+  max-width: 1100px;
 
+  margin: auto;
 
-        <label for="phone">
-          Phone Number
-        </label>
+  display: grid;
 
-        <input
-          type="tel"
-          id="phone"
-          placeholder="Enter your phone number"
-          required
-        >
+  grid-template-columns:
+    repeat(3, 1fr);
 
+  gap: 25px;
+}
 
-        <label for="service">
-          Cleaning Service
-        </label>
+.review-card {
+  background: #f7fbff;
 
-        <select id="service">
+  padding: 30px;
 
-          <option>House Cleaning</option>
-          <option>Deep Cleaning</option>
-          <option>Office Cleaning</option>
+  border-radius: 13px;
 
-        </select>
+  text-align: center;
+}
 
+.stars {
+  color: #f59e0b;
 
-        <label for="message">
-          Message
-        </label>
+  font-size: 20px;
 
-        <textarea
-          id="message"
-          placeholder="Tell us what you need"
-        ></textarea>
+  margin-bottom: 15px;
+}
 
+.review-card p {
+  font-style: italic;
 
-        <button type="submit">
-          💬 Request Quote on WhatsApp
-        </button>
+  margin-bottom: 20px;
+}
 
-      </form>
+.review-card h3 {
+  color: #087ea4;
 
-    </section>
+  margin-bottom: 5px;
+}
 
-  </main>
+.review-card span {
+  color: #667085;
 
+  font-size: 14px;
+}
 
-  <!-- Footer -->
 
-  <footer>
+/* CONTACT */
 
-    <h2>BrightNest Cleaning</h2>
+.contact-section {
+  background: #e9f8ff;
+}
 
-    <p>
-      Professional Cleaning Services
-    </p>
+.quote-form {
+  max-width: 600px;
 
-    <p>
-      © 2026 BrightNest Cleaning.
-      All rights reserved.
-    </p>
+  margin: auto;
 
-  </footer>
+  background: white;
 
+  padding: 35px;
 
-  <!-- WhatsApp Quote Script -->
+  border-radius: 15px;
 
-  <script>
+  box-shadow:
+    0 5px 25px
+    rgba(0, 0, 0, 0.08);
+}
 
-    function sendQuote(event) {
+.quote-form label {
+  display: block;
 
-      event.preventDefault();
+  font-weight: bold;
 
-      const name =
-        document.getElementById("name").value;
+  margin-top: 15px;
+}
 
-      const phone =
-        document.getElementById("phone").value;
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  width: 100%;
 
-      const service =
-        document.getElementById("service").value;
+  padding: 13px;
 
-      const message =
-        document.getElementById("message").value;
+  margin-top: 7px;
 
+  border: 1px solid #d1d5db;
 
-      /*
-        DEMO WHATSAPP NUMBER
+  border-radius: 7px;
 
-        Replace this with the real
-        business WhatsApp number.
-      */
+  font-size: 16px;
 
-      const whatsappNumber =
-        "10000000000";
+  font-family: inherit;
+}
 
+.quote-form textarea {
+  min-height: 130px;
 
-      const text =
-        "Hello BrightNest Cleaning!%0A%0A" +
+  resize: vertical;
+}
 
-        "New Cleaning Quote Request%0A%0A" +
+.quote-form button {
+  width: 100%;
 
-        "Name: " +
-        encodeURIComponent(name) +
-        "%0A" +
+  margin-top: 20px;
 
-        "Phone: " +
-        encodeURIComponent(phone) +
-        "%0A" +
+  padding: 15px;
 
-        "Service: " +
-        encodeURIComponent(service) +
-        "%0A" +
+  border: none;
 
-        "Message: " +
-        encodeURIComponent(message);
+  border-radius: 8px;
 
+  background: #087ea4;
 
-      const whatsappURL =
-        "https://wa.me/" +
-        whatsappNumber +
-        "?text=" +
-        text;
+  color: white;
 
+  font-size: 16px;
 
-      window.open(
-        whatsappURL,
-        "_blank"
-      );
+  font-weight: bold;
 
-    }
+  cursor: pointer;
 
-  </script>
+  transition: 0.3s;
+}
 
-</body>
+.quote-form button:hover {
+  background: #05627f;
+}
 
-</html>
+
+/* FLOATING BUTTONS */
+
+.contact-buttons {
+  position: fixed;
+
+  right: 20px;
+
+  bottom: 20px;
+
+  z-index: 9999;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.contact-buttons a {
+  color: white;
+
+  text-decoration: none;
+
+  padding: 13px 18px;
+
+  border-radius: 30px;
+
+  font-weight: bold;
+
+  box-shadow:
+    0 5px 15px
+    rgba(0, 0, 0, 0.2);
+
+  transition: 0.3s;
+}
+
+.contact-buttons a:hover {
+  transform: translateY(-3px);
+}
+
+.call-btn {
+  background: #087ea4;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+}
+
+
+/* FOOTER */
+
+footer {
+  background: #102a43;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 35px 7%;
+}
+
+footer h2 {
+  margin-bottom: 8px;
+}
+
+footer p {
+  color: #d0d5dd;
+
+  font-size: 14px;
+
+  margin: 5px 0;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  header {
+    padding: 18px 5%;
+  }
+
+  section {
+    padding: 70px 5%;
+  }
+
+  .hero {
+    padding: 80px 5%;
+  }
+
+  .hero h2 {
+    font-size: 48px;
+  }
+
+  .service-grid,
+  .pricing-grid,
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .popular {
+    transform: none;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  header {
+    position: relative;
+
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    justify-content: center;
+
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  section {
+    padding: 60px 5%;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .hero {
+    min-height: 75vh;
+
+    text-align: center;
+
+    justify-content: center;
+
+    padding: 70px 5%;
+  }
+
+  .hero h2 {
+    font-size: 39px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-form {
+    padding: 25px;
+  }
+
+  .contact-buttons {
+    right: 10px;
+
+    bottom: 10px;
+  }
+
+  .contact-buttons a {
+    padding: 11px 15px;
+
+    font-size: 13px;
+  }
+
+  }
