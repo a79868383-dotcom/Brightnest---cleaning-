@@ -1,0 +1,466 @@
+/* ================================
+   BRIGHTNEST CLEANING
+   Complete Website CSS
+================================ */
+
+
+/* ---------- RESET ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f7fbff;
+  color: #1d2939;
+}
+
+
+/* ---------- HEADER ---------- */
+
+header {
+  background: #ffffff;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+header h1 {
+  color: #087ea4;
+  font-size: 28px;
+}
+
+header p {
+  color: #667085;
+  font-size: 13px;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+nav a {
+  color: #1d2939;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #087ea4;
+}
+
+
+/* ---------- GENERAL SECTION ---------- */
+
+section {
+  padding: 90px 7%;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 45px;
+}
+
+
+/* ---------- HERO ---------- */
+
+#home {
+  min-height: 78vh;
+  padding: 100px 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(
+    135deg,
+    #e9f8ff,
+    #ffffff
+  );
+}
+
+#home h2 {
+  text-align: left;
+  max-width: 700px;
+  font-size: 58px;
+  line-height: 1.08;
+  margin-bottom: 25px;
+}
+
+#home p {
+  max-width: 650px;
+  font-size: 20px;
+  color: #475467;
+  margin-bottom: 35px;
+}
+
+#home a {
+  display: inline-block;
+  background: #087ea4;
+  color: white;
+  text-decoration: none;
+  padding: 15px 28px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#home a:hover {
+  background: #05627f;
+  transform: translateY(-2px);
+}
+
+
+/* ---------- SERVICES ---------- */
+
+#services {
+  background: #ffffff;
+}
+
+#services > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1150px;
+  margin: auto;
+}
+
+article {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+#services article {
+  transition: 0.3s;
+}
+
+#services article:hover {
+  transform: translateY(-6px);
+}
+
+article h3 {
+  color: #087ea4;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+article p {
+  color: #667085;
+}
+
+
+/* ---------- PRICING ---------- */
+
+#pricing {
+  background: #f7fbff;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.price-card {
+  text-align: center;
+  padding: 40px 25px;
+}
+
+.price-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 45px;
+  font-weight: bold;
+  color: #087ea4;
+  margin-bottom: 15px;
+}
+
+.price-card a {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 12px 25px;
+  background: #087ea4;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.price-card a:hover {
+  background: #05627f;
+}
+
+.featured {
+  border: 2px solid #087ea4;
+  transform: scale(1.04);
+}
+
+.featured::before {
+  content: "POPULAR";
+  display: block;
+  background: #087ea4;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+
+/* ---------- TESTIMONIALS ---------- */
+
+#testimonials {
+  background: #ffffff;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.testimonial-card {
+  text-align: center;
+  background: #f7fbff;
+  padding: 30px;
+}
+
+.testimonial-card p {
+  font-size: 17px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-card h3 {
+  color: #087ea4;
+  margin-bottom: 5px;
+}
+
+.testimonial-card span {
+  color: #667085;
+  font-size: 14px;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+#about {
+  background: #e9f8ff;
+  text-align: center;
+}
+
+#about ul {
+  list-style: none;
+  max-width: 500px;
+  margin: auto;
+}
+
+#about li {
+  background: white;
+  margin: 12px 0;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ---------- CONTACT ---------- */
+
+#contact {
+  background: #f7fbff;
+  text-align: center;
+}
+
+#contact > p {
+  margin-bottom: 30px;
+  color: #667085;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 14px;
+  margin-top: 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #087ea4;
+  border-color: #087ea4;
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #087ea4;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #05627f;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  background: #102a43;
+  color: white;
+  text-align: center;
+  padding: 30px 7%;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 900px) {
+
+  header {
+    padding: 18px 5%;
+  }
+
+  section {
+    padding: 70px 5%;
+  }
+
+  #home {
+    padding: 80px 5%;
+  }
+
+  #home h2 {
+    font-size: 46px;
+  }
+
+  #services > div,
+  .pricing-container,
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
+
+  .featured {
+    transform: none;
+  }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+  header {
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  section {
+    padding: 60px 5%;
+  }
+
+  section h2 {
+    font-size: 30px;
+  }
+
+  #home {
+    min-height: 70vh;
+    padding: 70px 5%;
+    align-items: center;
+    text-align: center;
+  }
+
+  #home h2 {
+    text-align: center;
+    font-size: 38px;
+  }
+
+  #home p {
+    font-size: 17px;
+  }
+
+  form {
+    padding: 25px;
+  }
+
+  }
